@@ -94,7 +94,7 @@ resource "aws_instance" "kubnode" {
   key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.kubctl-sg.id]
   subnet_id              = aws_subnet.kubctl-1.id
-  user_data              = file("D:/oneDrive/Documents/Terrafrom/userdata.tpl")
+ # user_data              = file("D:/oneDrive/Documents/Terrafrom/userdata.tpl")
 
   tags = {
     Name = "${var.envi}"
